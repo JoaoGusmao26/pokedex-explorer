@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pokédex Explorer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="cabecalho">
+    <div class="logo">
+      <span class="logo-bola">◉</span>
+      <span>Pokédex <strong>Explorer</strong></span>
+    </div>
+    <span class="status-api">● API online</span>
+  </header>
+
+  <main class="container">
+
+    <section class="hero">
+      <div class="hero-texto">
+        <span class="etiqueta">EXPLORADOR POKÉMON</span>
+        <h1>Descubra informações<br><span>sobre qualquer Pokémon.</span></h1>
+        <p>Pesquise por nome ou número e explore dados, tipos, habilidades e características dos seus Pokémon favoritos.</p>
+      </div>
+
+      <div class="pokebola-decorativa">
+        <div class="pokebola-grande">
+          <div class="pokebola-centro"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="busca-area">
+      <form id="form-busca" class="form-busca">
+        <div class="campo-busca">
+          <span>⌕</span>
+          <input
+            type="text"
+            id="campo-pokemon"
+            placeholder="Digite o nome ou número do Pokémon..."
+            autocomplete="off"
+          >
+        </div>
+        <button type="submit" id="botao-buscar">Buscar Pokémon</button>
+      </form>
+
+      <div class="sugestoes">
+        <span>Experimente:</span>
+        <button class="sugestao" data-pokemon="pikachu">Pikachu</button>
+        <button class="sugestao" data-pokemon="charizard">Charizard</button>
+        <button class="sugestao" data-pokemon="mewtwo">Mewtwo</button>
+        <button class="sugestao" data-pokemon="eevee">Eevee</button>
+      </div>
+    </section>
+
+    <section id="resultado" class="resultado">
+      <div class="estado-inicial">
+        <div class="icone-pokebola">◉</div>
+        <h2>Comece sua exploração</h2>
+        <p>Digite o nome ou número de um Pokémon para visualizar suas informações.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <p>Dados fornecidos pela <a href="https://pokeapi.co/" target="_blank">PokéAPI</a>.</p>
+    <p>Projeto desenvolvido para fins educacionais.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
