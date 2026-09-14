@@ -31,3 +31,11 @@ Este projeto utiliza a PokéAPI para consultar informações dos Pokémon.
 Endpoint utilizado:
 
 https://pokeapi.co/api/v2/pokemon/{nome-ou-id}
+## Tecnologias utilizadas
+
+- HTML5
+- CSS3
+- JavaScript
+- Fetch API
+- PokéAPI
+- Git e GitHub
